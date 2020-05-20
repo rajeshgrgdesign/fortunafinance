@@ -1,0 +1,4 @@
+# Gitignore
+
+.htaccess
+wp-config.php
