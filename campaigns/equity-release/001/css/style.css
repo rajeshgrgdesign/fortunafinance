@@ -1,0 +1,575 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('../fonts/helvetica-neue-bold.eot');
+    src: url('../fonts/helvetica-neue-bold.eot') format('embedded-opentype'),
+         url('../fonts/helvetica-neue-bold.woff2') format('woff2'),
+         url('../fonts/helvetica-neue-bold.woff') format('woff'),
+         url('../fonts/helvetica-neue-bold.ttf') format('truetype'),
+         url('../fonts/helvetica-neue-bold.svg#HelveticaNeueBold') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('../fonts/helveticaneue-light.eot');
+    src: url('../fonts/helveticaneue-light.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneue-light.woff2') format('woff2'),
+         url('../fonts/helveticaneue-light.woff') format('woff'),
+         url('../fonts/helveticaneue-light.ttf') format('truetype'),
+         url('../fonts/helveticaneue-light.svg#HelveticaNeueLight') format('svg');
+}
+
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSansRegular.eot');
+    src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansRegular.woff2') format('woff2'),
+         url('../fonts/OpenSansRegular.woff') format('woff'),
+         url('../fonts/OpenSansRegular.ttf') format('truetype'),
+         url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+@font-face {
+    font-family: 'Effra_Std_Bd';
+    src: url('../fonts/Effra_Std_Bd.eot');
+    src: url('../fonts/Effra_Std_Bd.eot') format('embedded-opentype'),
+         url('../fonts/Effra_Std_Bd.woff2') format('woff2'),
+         url('../fonts/Effra_Std_Bd.woff') format('woff'),
+         url('../fonts/Effra_Std_Bd.ttf') format('truetype'),
+         url('../fonts/Effra_Std_Bd.svg#Effra_Std_Bd') format('svg');
+}
+@font-face {
+    font-family: 'Effra_Std_Lt';
+    src: url('../fonts/Effra_Std_Lt.eot');
+    src: url('../fonts/Effra_Std_Lt.eot') format('embedded-opentype'),
+         url('../fonts/Effra_Std_Lt.woff2') format('woff2'),
+         url('../fonts/Effra_Std_Lt.woff') format('woff'),
+         url('../fonts/Effra_Std_Lt.ttf') format('truetype'),
+         url('../fonts/Effra_Std_Lt.svg#Effra_Std_Lt') format('svg');
+}
+@font-face {
+    font-family: 'Effra_Std_Rg';
+    src: url('../fonts/Effra_Std_Rg.eot');
+    src: url('../fonts/Effra_Std_Rg.eot') format('embedded-opentype'),
+         url('../fonts/Effra_Std_Rg.woff2') format('woff2'),
+         url('../fonts/Effra_Std_Rg.woff') format('woff'),
+         url('../fonts/Effra_Std_Rg.ttf') format('truetype'),
+         url('../fonts/Effra_Std_Rg.svg#Effra_Std_Rg') format('svg');
+}
+
+@font-face {
+    font-family: 'Effra_Std_Md';
+    src: url('../fonts/Effra_Std_Md.eot');
+    src: url('../fonts/Effra_Std_Md.eot') format('embedded-opentype'),
+         url('../fonts/Effra_Std_Md.woff2') format('woff2'),
+         url('../fonts/Effra_Std_Md.woff') format('woff'),
+         url('../fonts/Effra_Std_Md.ttf') format('truetype'),
+         url('../fonts/Effra_Std_Md.svg#Effra_Std_Md') format('svg');
+}
+
+
+html, body {
+    height: 100%;
+}
+body{
+	padding-top:70px;
+	color:#313841;
+}
+
+p{
+	font-family: 'HelveticaNeueLight';
+	font-size:17px;
+	margin-bottom:20px;
+
+	}
+.header{
+	background-color:#14142f;
+	position:fixed;
+	width:100%;
+	top:0px;
+	height:70px;
+	z-index:2000;
+	border-bottom:#1d71b8 solid 1px;
+}
+
+.header .logo{
+	padding-top:4px;
+}
+
+.header .phone_number{
+  font-family: 'Effra_Std_Lt';
+	font-size:16px;
+	color:#fff;
+	padding-top:23px;
+	position:absolute;
+	right:200px;
+}
+
+
+.header .phone_number span{
+	color:#cbcbcb;
+}
+
+.header a.contact_button{
+	background-color:#1d71b8;
+	display:inline-block;
+	min-width:160px;
+	height:69px;
+	text-decoration:none;
+	color:#fff;
+	font-size:18px;
+	line-height:69px;
+	text-align:center;
+}
+.contact_form{
+	background-color: rgba(20,20,47,0.9);
+	position:fixed;
+	width:100%;
+	top:70px;
+	z-index:200;
+	}
+
+.contact_form .container{
+	padding-top:26px;
+	padding-bottom:70px;
+	}
+	
+.contact_form h1{
+	margin:0px 0 10px;
+	padding:0px;
+	color:#fff;
+	font-size:24px;
+	
+	}
+
+.contact_form .left_info p{
+	font-size:16px;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+
+.contact_form .text-muted a{
+	color:#ffffff;
+	text-decoration:underline;
+	}
+.contact_form .text-muted {
+	color:#ffffff;
+
+	}	
+.contact_form .close_form{
+	padding:15px 30px 0px;
+	font-size:16px;
+	text-align:right;
+	}	
+.contact_form .close_form a{
+	color:#fff;
+	text-decoration:none;
+	}
+	
+			
+.page_content{
+	padding:0px 0 0;
+	margin:0px;
+	position:relative;
+
+}
+
+
+.banner{
+	background:url(../images/banner.jpg) no-repeat 50% 50%;
+	background-size:cover;
+    min-height:379px;
+}
+
+.banner .container{
+	max-width:875px;
+	position:relative;
+}
+
+.banner h1{
+	margin:0px;
+	padding:40px 0 15px;
+	font-size:55px;
+	color:#fff;
+ font-family: 'Effra_Std_Rg';
+}
+
+.banner .sandra_box{
+	padding-top:80px;
+	text-align:right;
+}
+
+.banner p{
+	font-size:16px;
+	color:#e6e6e6;
+  font-family: 'Effra_Std_Md';
+}
+.what_we_offer .container, .independent_box .container, .adviser_main_box{
+	max-width:730px;
+}
+.what_we_offer{
+	padding-top:45px;
+	padding-bottom:45px;
+	background-color:#f5f5f5;
+}
+
+.what_we_offer h4{
+	font-size:17px;
+	margin:0px 0 5px;
+	color:#313841;
+}
+
+.what_we_offer ul{
+	margin:0px;
+	padding:0px;
+}
+
+.what_we_offer ul li{
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	font-size:17px;
+	color:#313841;
+	font-family: 'HelveticaNeueLight';
+}
+
+
+.our_company_box{
+	padding-top:60px;
+	text-align:center;
+	padding-bottom:40px;
+}
+.our_company_box p{
+	font-size:18px;
+	color:#313841;
+
+}
+
+.market_box{
+	background-color:#211d30;
+	padding-top:60px;
+	padding-bottom:60px;
+	text-align:center;
+}
+
+.market_box h2{
+	color:#fff;
+
+}
+.adviser_main_box{
+	padding-top:60px;
+	padding-bottom:30px;
+	text-align:center;
+}
+
+.independent_box{
+	background-color:#eeeeee;
+	padding-top:40px;
+	padding-bottom:40px;
+	text-align:center;
+}
+
+.independent_box h4{
+	font-size:18px;
+	margin:0px 0 7px;
+	padding:0px;
+}
+.independent_box p{
+	margin:0px 0 10px;
+	padding:0px;
+}
+
+.independent_box .small_box{
+	padding-top:40px;
+}
+
+
+.join_box{
+	background-color:#eeeeee;
+	padding:60px 0 60px 0;
+}
+
+.join_box .container{
+	max-width:580px;
+	text-align:center;
+}
+.join_box .container h1{
+	font-size:34px;
+	color:#1b0e28;
+}
+.join_box .container p{
+	font-size:18px;
+	color:#4d4d4d;
+}
+
+.join_box .form-control, .join_box .btn {
+	max-width:435px;
+	margin:0 auto;
+	text-align:center;
+	height:40px!important;
+
+}
+
+.as_seen_on{
+	padding-top:60px;
+	padding-bottom:60px;
+	text-align:center;
+}
+
+.as_seen_on p{
+	font-size:12px;
+	color:#060606;
+	margin-bottom:20px;
+	text-transform:uppercase;
+}
+.ben_banner{
+	background:url(../images/bg_ban.jpg) no-repeat 50% 50%;
+	background-size:cover;
+	min-height:451px;
+	text-shadow:2px 1px 3px #000000;
+}
+.ben_banner .container{
+	padding-top:350px;
+	text-align:right;
+	color:#fff;
+}
+.ben_banner h4{
+	margin:0px;
+	font-size:20px;
+}
+.ben_banner p{
+	font-size:20px;
+	margin:0px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.ben_banner .text-info{
+	color:#d2d2d2;
+}
+.footer{
+	padding-top:50px;
+	padding-bottom:50px;
+	background-color:#14142f;
+	color:#fff;
+}
+
+.footer h5{
+	margin:0px 0 5px;
+	padding:0px;
+
+}
+.footer a{
+	color:#fff;
+}
+.footer ul{
+	margin:0px 0 20px;
+	padding:0px;
+	list-style:none;
+}
+
+.footer ul li{
+	margin:0px 0 2px;
+	padding:0px;
+	list-style:none;
+	font-size:14px;
+	
+}
+.footer ul li a{
+	color:#b8b8b8;
+	text-decoration:none;
+}
+
+.footer ul li a:hover{
+	color:#b8b8b8;
+	text-decoration:underline;
+}
+.footer .address_right{
+	text-align:right;
+}
+
+.footer .address_right p{
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#e6e6e6;
+}
+.footer .address_right p a{
+	color:#e6e6e6;
+}
+.footer h5{
+	font-size:16px;
+}
+
+.footer .pd_less{
+	padding-left:5px;
+	padding-right:5px;
+
+}
+
+.footer .authorized_text{
+	padding-top:20px;
+	font-size:14px;
+	text-align:center;
+}
+/*custom classes to make adjustment*/
+.pd_left_zero {
+	padding-left: 0px;
+}
+.pd_right_zero {
+	padding-right: 0px;
+}
+.pd_zero {
+	padding: 0px;
+}
+.margin_zero {
+	margin: 0px;
+}
+.pull_top {
+	padding-top: 15px;
+}
+.pull_bottom {
+	padding-bottom: 20px;
+}
+.pull_top_large {
+	padding-top: 20px;
+}
+.pull_bottom_large {
+	padding-bottom: 30px;
+}
+.img-responsive {
+	display: inline-block;
+}
+.bold {
+	font-weight: bold;
+}
+rl{
+	position:relative;
+}
+.text_blue{
+	color:#1d71b8;
+}
+/*custom classes to make adjustment*/
+
+
+@media (max-width:767px) {
+.header a.contact_button{
+	min-width:120px;
+}
+
+.contact_form .container{
+	padding-top:10px;
+	padding-bottom:20px;
+	}	
+.contact_form h1{
+	margin:0px 0 20px;
+	font-size:24px;
+	}
+
+.contact_form .left_info {
+	padding-bottom:5px;
+	}
+	
+.banner{
+	min-height:250px;
+	padding-top:25px;
+	padding-bottom:25px;
+	width:inherit;
+}
+.banner .btn{
+	max-width:400px;
+	display:inline-block;
+}
+.banner h1{
+	padding:0px 0 15px;
+	font-size:30px;
+}
+
+
+.banner .sandra_box{
+	padding-top:40px;
+	text-align:right;
+}
+.what_we_offer{
+	padding-top:25px;
+	padding-bottom:25px;
+	text-align:center;
+}
+.what_we_offer h4{
+	margin-top:20px;
+}
+.our_company_box{
+	padding-top:25px;
+	padding-bottom:25px;
+}
+
+.market_box{
+	padding-top:25px;
+	padding-bottom:25px;
+}
+
+
+.independent_box{
+	padding-top:25px;
+	padding-bottom:0px;
+}
+.independent_box .small_box{
+	padding-top:0px;
+	padding-bottom:25px;
+}
+.adviser_main_box{
+	padding-top:25px;
+	padding-bottom:25px;
+}
+.join_box{
+	padding:25px 0 25px 0;
+}
+
+.adviser_box .container{
+	background:none;
+	padding-top:30px;
+	padding-bottom:30px;
+	min-height:inherit;
+}
+.as_seen_on{
+	padding-top:25px;
+	padding-bottom:25px;
+}	
+
+.as_seen_on img{
+	margin-bottom:20px;
+	margin-top:20px;
+}
+
+.ben_banner{
+	min-height:251px;
+}
+.ben_banner .container{
+	padding-top:150px;
+	padding-bottom:20px;
+}
+
+
+.footer .address_right{
+	text-align:center;
+}
+.footer{
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align:center;
+
+}
+.footer .address_right{
+	padding-top:20px;
+
+}			
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	 
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+	 
+}
+
+@media (min-width:1200px) {
+	 
+}

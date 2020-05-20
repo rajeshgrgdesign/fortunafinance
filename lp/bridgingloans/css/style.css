@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'HelveticaNeueBold';
+	src: url('../fonts/helvetica-neue-bold.eot');
+	src: url('../fonts/helvetica-neue-bold.eot') format('embedded-opentype'), url('../fonts/helvetica-neue-bold.woff2') format('woff2'), url('../fonts/helvetica-neue-bold.woff') format('woff'), url('../fonts/helvetica-neue-bold.ttf') format('truetype'), url('../fonts/helvetica-neue-bold.svg#HelveticaNeueBold') format('svg');
+}
+@font-face {
+	font-family: 'HelveticaNeueLight';
+	src: url('../fonts/helveticaneue-light.eot');
+	src: url('../fonts/helveticaneue-light.eot') format('embedded-opentype'), url('../fonts/helveticaneue-light.woff2') format('woff2'), url('../fonts/helveticaneue-light.woff') format('woff'), url('../fonts/helveticaneue-light.ttf') format('truetype'), url('../fonts/helveticaneue-light.svg#HelveticaNeueLight') format('svg');
+}
+@font-face {
+	font-family: 'OpenSansRegular';
+	src: url('../fonts/OpenSansRegular.eot');
+	src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'), url('../fonts/OpenSansRegular.woff2') format('woff2'), url('../fonts/OpenSansRegular.woff') format('woff'), url('../fonts/OpenSansRegular.ttf') format('truetype'), url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+@font-face {
+	font-family: 'Effra_Std_Bd';
+	src: url('../fonts/Effra_Std_Bd.eot');
+	src: url('../fonts/Effra_Std_Bd.eot') format('embedded-opentype'), url('../fonts/Effra_Std_Bd.woff2') format('woff2'), url('../fonts/Effra_Std_Bd.woff') format('woff'), url('../fonts/Effra_Std_Bd.ttf') format('truetype'), url('../fonts/Effra_Std_Bd.svg#Effra_Std_Bd') format('svg');
+}
+@font-face {
+	font-family: 'Effra_Std_Lt';
+	src: url('../fonts/Effra_Std_Lt.eot');
+	src: url('../fonts/Effra_Std_Lt.eot') format('embedded-opentype'), url('../fonts/Effra_Std_Lt.woff2') format('woff2'), url('../fonts/Effra_Std_Lt.woff') format('woff'), url('../fonts/Effra_Std_Lt.ttf') format('truetype'), url('../fonts/Effra_Std_Lt.svg#Effra_Std_Lt') format('svg');
+}
+@font-face {
+	font-family: 'Effra_Std_Rg';
+	src: url('../fonts/Effra_Std_Rg.eot');
+	src: url('../fonts/Effra_Std_Rg.eot') format('embedded-opentype'), url('../fonts/Effra_Std_Rg.woff2') format('woff2'), url('../fonts/Effra_Std_Rg.woff') format('woff'), url('../fonts/Effra_Std_Rg.ttf') format('truetype'), url('../fonts/Effra_Std_Rg.svg#Effra_Std_Rg') format('svg');
+}
+@font-face {
+	font-family: 'Effra_Std_Md';
+	src: url('../fonts/Effra_Std_Md.eot');
+	src: url('../fonts/Effra_Std_Md.eot') format('embedded-opentype'), url('../fonts/Effra_Std_Md.woff2') format('woff2'), url('../fonts/Effra_Std_Md.woff') format('woff'), url('../fonts/Effra_Std_Md.ttf') format('truetype'), url('../fonts/Effra_Std_Md.svg#Effra_Std_Md') format('svg');
+}
+.header .phone {
+	color: #363636;
+	font-family: 'Effra_Std_Lt';
+}
+.header .phone b {
+	font-family: 'Effra_Std_Md';
+	font-weight: normal;
+}
+.header .phone a{
+	color: #363636;
+	text-decoration:none;
+}
+.bg-light {
+	background-color: #ececed !important;
+	color: #181830;
+}
+.page_content {
+	padding: 0px;
+}
+.banner {
+	background: #14142f;
+}
+.banner .inner_bg {
+	background: url(../images/banner-1.jpg) no-repeat right bottom;
+	color: #fff;
+}
+.banner .inner_bg h1 {
+	font-size: 55px;
+	font-family: 'Effra_Std_Rg';
+}
+.banner .inner_bg h3 {
+	font-size: 25px;
+	font-family: 'Effra_Std_Rg';
+	color: #e6e6e6;
+}
+.banner .inner_bg .box-right {
+	font-family: 'Effra_Std_Rg';
+	color: #ececed;
+	background-color: rgba(25, 42, 68, 0.5);
+	min-height: 340px;
+}
+.banner .inner_bg .box-right h5 {
+	font-family: 'Effra_Std_Md';
+	font-size: 16px;
+}
+.gray-box {
+	background: #f5f5f5;
+}
+.gray-box h1 {
+	font-family: 'Effra_Std_Md';
+}
+.gray-box h5 {
+	font-size: 17px;
+	font-family: 'HelveticaNeueBold';
+}
+.gray-box h3 {
+	font-family: 'Effra_Std_Md';
+	font-size: 25px;
+}
+.gray-box h4 {
+	font-size: 20px;
+}
+.gray-box p {
+	font-size: 17px;
+}
+.social-proof{
+	max-width:980px;
+}
+.btn-primary {
+	color: #fff;
+	background-color: #4291b9;
+	border-color: #4291b9;
+}
+.btn-primary:hover {
+	color: #fff;
+	background-color: #347ea3;
+	border-color: #347ea3;
+}
+.btn-primary.focus, .btn-primary:focus {
+box-shadow:0 0 0 .2rem rgba(0,123,255,.5);
+}
+.btn-primary.disabled, .btn-primary:disabled {
+	color: #fff;
+	background-color: #347ea3;
+	border-color: #347ea3;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+	color: #fff;
+	background-color: #347ea3;
+	border-color: #347ea3;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+box-shadow:0 0 0 .2rem rgba(0,123,255,.5);
+}
+.text-primary {
+    color: #4291b9 !important;
+}
+.footer{
+	background:#14142f;
+	color:#e1e1e1;
+	font-size:14px;
+}
+.footer h6{
+	font-family: 'Effra_Std_Md';
+}
+
+.footer a{
+	color:#e1e1e1;
+	text-decoration:none;
+
+}
+/*custom classes to make adjustment*/
+
+.img-responsive {
+	display: inline-block;
+}
+.bold {
+	font-weight: bold;
+}
+/*custom classes to make adjustment*/
+
+
+
+@media (max-width: 575.98px) {
+.banner .inner_bg {
+	background: none;
+}
+.banner .inner_bg .box-right {
+	min-height: inherit;
+}
+.banner .inner_bg h1 {
+	font-size: 36px;
+}
+}
+ @media (min-width: 576px) and (max-width: 767.98px) {
+.banner .inner_bg {
+	background: none;
+}
+.banner .inner_bg .box-right {
+	min-height: inherit;
+}
+}
+ @media (min-width: 768px) and (max-width: 991.98px) {
+}
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+}
+ @media (min-width: 1200px) {
+}

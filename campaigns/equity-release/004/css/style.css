@@ -1,0 +1,134 @@
+/*
+Theme Name: FortunaFinance
+Theme URI: http://fortuna-finance.co.uk
+Description: Theme for Fortuna Finance
+Author:Webpop Design
+Author URI: http://www.webpopdesign.com
+Tags: two columns, widgets, CMS, corporate, company
+*/
+
+html, body { overflow-x: hidden; }
+body {background:#fff;-webkit-font-smoothing:antialiased;font-family: 'Helvetica Neue';font-size:16px;color:#555555;}
+body p {line-height:25px;margin-bottom: 25px;}
+a {cursor:pointer;}
+.clearfix {clear:both;}
+.wrap {max-width: 896px;margin: auto;padding: 0px 15px;position: relative;}
+.container-fluid {max-width:892px;margin:auto;}
+.inner-wrap {max-width:730px;margin:auto;padding: 0px 15px;}
+.container-navigation {max-width:560px;margin:auto;padding: 0px 15px;}
+.btn {-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}
+.btn:focus {outline: none!important;}
+:focus {outline: none!important;}
+.btn-primary {color: #fff;background-color: #1d71b8;border-color: #1d71b8;font-family:'Effra';font-weight:500;text-transform:uppercase;}
+
+
+/*--TYPOGRAPHY--*/
+
+@font-face {font-family: 'Helvetica Neue';src: url('fonts/helveticaneue.eot');src: url('fonts/helveticaneue.eot?#iefix') format('embedded-opentype'),url('fonts/helveticaneue.woff') format('woff'),url('fonts/helveticaneue.ttf')  format('truetype'),url('fonts/helveticaneue.svg#helveticaneue') format('svg');font-weight:400;}
+@font-face {font-family: 'Effra';src: url('fonts/effra-regular.eot');src: url('fonts/effra-regular.eot?#iefix') format('embedded-opentype'),url('fonts/effra-regular.woff') format('woff'),url('fonts/effra-regular.ttf')  format('truetype'),url('fonts/effra-regular.svg#effraregular') format('svg');font-weight:400;}
+@font-face {font-family: 'Effra';src: url('fonts/effra-medium.eot');src: url('fonts/effra-medium.eot?#iefix') format('embedded-opentype'),url('fonts/effra-medium.woff') format('woff'),url('fonts/effra-medium.ttf')  format('truetype'),url('fonts/effra-medium.svg#efframedium') format('svg');font-weight:500;font-style:normal}
+@font-face {font-family: 'Effra';src: url('fonts/effra-heavy.eot');src: url('fonts/effra-heavy.eot?#iefix') format('embedded-opentype'),url('fonts/effra-heavy.woff') format('woff'),url('fonts/effra-heavy.ttf')  format('truetype'),url('fonts/effra-heavy.svg#effraheavy') format('svg');font-weight:700;}
+h1,h2,h3,h4,h5, h6 {font-family: 'Effra';font-weight:500;}
+h1 {font-size:28px;}
+h2 {font-size:25px;}
+h3 {font-size:25px;}
+h4 {font-size:22px;}
+
+
+/*-----HEADER-----*/
+
+header {padding:30px 0px 30px 0px;}
+header h1 {margin:0px;color:#20203a;font-size:50px;line-height:65px;font-weight:400;}
+header h1 span {color:#615f5f;}
+header h2 {margin:0px 0px 10px 0px;color:#615f5f;font-size:40px;font-weight:400;}
+header h3 {margin:0px;color:#5d5d5d;font-size:25px;font-weight:400;}
+.logo img {margin-top:20px;float:right;}
+.logo, .page-title {float:right!important;}
+
+
+/*-----CHECKBOX-----*/
+
+[type="checkbox"]:not(:checked),[type="checkbox"]:checked {position: absolute;left: -9999px;}
+[type="checkbox"]:not(:checked) + label,[type="checkbox"]:checked + label {position: relative;padding-left: 45px;cursor: pointer;}
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,[type="checkbox"]:checked + label:before {content: '';position: absolute;left: 0; top: 0;width: 2.40em; height: 2.40em;border: 1px solid #888;background: #fff;border-radius: 4px;box-shadow: inset 0 1px 3px rgba(0,0,0,.1);}
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,[type="checkbox"]:checked + label:after {content: '\f00c';font-family: FontAwesome;position: absolute;top: 7px;left: 5px;font-size: 23px;line-height: 0.8;transition: all .2s;color:#14142f;}
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {opacity: 0;transform: scale(0);}
+[type="checkbox"]:checked + label:after {opacity: 1;transform: scale(1);}
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,[type="checkbox"]:disabled:checked + label:before {box-shadow: none;border-color: #bbb;background-color: #ddd;}
+[type="checkbox"]:disabled:checked + label:after {color: #999;}
+[type="checkbox"]:disabled + label {color: #aaa;}
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,[type="checkbox"]:not(:checked):focus + label:before {border: 1px dotted #ccc;}
+/* hover style just for information */
+label:hover:before {border: 1px solid #4778d9!important;}
+label {font-weight: 400;font-size:13px;}
+
+/*-----FORM-----*/
+
+#first-box input[type="text"] {-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;border-width:0px;padding:5px;width:100%;border:1px solid #888;padding:6px;margin-bottom:20px;color:#555;}
+#first-box input[type="submit"] {width:100%;color: #fff;background-color: #1d71b8;border-color: #1d71b8;font-family:'Effra';font-weight:500;text-transform:uppercase;padding:9px 0px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;border-width:0px;margin-top:15px;}
+#first-box input[type="submit"]:hover {background-color: #286090;border-color: #204d74;}
+.privacy-checkbox {margin:0px 0px 10px 0px;}
+#aweber-form {max-width:305px;margin:auto;display:block;}
+
+
+/*-----PAGE-----*/
+
+#first-box {background:#14142f;color:#fff;padding:23px;margin-bottom:25px;}
+#first-box .column-one h3 {margin-top:0px;margin-bottom:20px;font-weight:500;font-size:25px;}
+#second-box {background: url(../images/second-box.png) no-repeat; background-position:left bottom;background-color:#1d71b8;color:#fff;padding:23px;margin-bottom:25px;}
+#second-box .column-one h3 {margin-top:0px;margin-bottom:20px;font-weight:500;font-size:25px;}
+#third-box {background: url(../images/third-box.jpg) repeat;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-position:center;width:100%;height:auto;color:#fff;padding:23px;margin-bottom:25px;}
+#third-box .column-one h3 {margin-top:0px;margin-bottom:20px;font-weight:500;font-size:25px;}
+#social-proof {background:#ebebeb;padding:50px 23px;margin-bottom:50px;text-align:center;}
+.vouchedfor {margin-top: -13px;}
+
+/*-----THANK YOU-----*/
+
+#content-thank-you {padding:70px 0px 10px 0px;}
+#content-thank-you h1 {color:#14142f;margin-top:0px;text-align:center;padding-bottom:30px;margin-bottom:30px!important;font-size:30px;position:relative;}
+#content-thank-you h1:after {content: "";position: absolute;left: 50%;margin-left: -150px;bottom: 0;width: 300px;border-bottom: 2px solid #c8c8c8;}
+#content-thank-you h2 {color:#14142f;margin-top:0px;text-align:center;padding-bottom:30px;margin-bottom:30px!important;font-size:30px;position:relative;}
+#content-thank-you h2:after {content: "";position: absolute;left: 50%;margin-left: -150px;bottom: 0;width: 300px;border-bottom: 2px solid #c8c8c8;}
+#content-thank-you img {margin:auto;display:block;margin-top:50px!important;}
+#social-proof-white {background:#fff;padding:40px 23px;margin-bottom:0px;text-align:center;}
+.footer-logo-thank-you {text-align:center;}
+.footer-text-thank-you {text-align:center;position:relative;padding-top:60px;}
+.footer-thank-you {margin-top: 0px;background:#14142f;color:#b8b8b8;font-size:14px;padding:50px 0px 30px 0px;}
+
+
+/*-----FOOTER-----*/
+
+.footer-wrap {max-width:896px;margin:auto;padding:0px 15px;}
+footer {margin-top: 0px;background:#14142f;color:#b8b8b8;font-size:14px;padding:50px 0px 90px 0px;}
+.footer-text {text-align:right;position:relative;padding-top:60px;}
+footer p {line-height:20px;margin-bottom:20px;}
+
+
+/*-----MEDIA QUERIES-----*/
+
+
+@media only screen and (max-width: 767px) {
+header h1 {margin:0px;color:#20203a;font-size:50px;line-height:50px;font-weight:400;}
+header {padding:30px 0px 0px 0px;}
+.logo img {display:none;}
+.logo, .page-title {float:none!important;}
+#first-box {margin-top:30px;}
+#second-box {background-image:none;}
+#social-proof  {padding:40px 0px;}
+#social-proof img {margin:20px 0px;}
+#content-thank-you {padding:40px 0px 0px 0px;}
+#social-proof-white {padding:20px 23px 40px 23px;}
+#social-proof-white img {margin:20px 0px;}
+.footer-wrap {padding:0px 20px;}
+.footer-text, .footer-logo {text-align:center;}
+}
+
+
+@media only screen and (max-width: 580px) {
+#aweber-form {max-width:100%;margin:auto;display:block;}
+}

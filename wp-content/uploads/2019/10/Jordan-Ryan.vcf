@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.14.6//EN
+N:Ryan;Jordan;;;
+FN:Jordan Ryan
+ORG:Fortuna Financial Planning;
+EMAIL;type=INTERNET;type=WORK;type=pref:jr@fortunafinance.co.uk
+TEL;type=CELL;type=VOICE;type=pref:07846804281
+TEL;type=WORK;type=VOICE:01992 503410
+ADR;type=WORK;type=pref:;;114-116 Fore Street;Hertford;Hertfordshire;SG14 1AJ;UK
+item1.URL;type=pref:www.fortunafinance.co.uk/people/jordan-ryan/
+item1.X-ABLabel:_$!<HomePage>!$_
+X-ABUID:59F05F1E-D378-404A-8034-AFA5E9EBF821
+END:VCARD

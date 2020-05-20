@@ -1,0 +1,351 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'HelveticaNeueBold';
+    src: url('../fonts/helvetica-neue-bold.eot');
+    src: url('../fonts/helvetica-neue-bold.eot') format('embedded-opentype'),
+         url('../fonts/helvetica-neue-bold.woff2') format('woff2'),
+         url('../fonts/helvetica-neue-bold.woff') format('woff'),
+         url('../fonts/helvetica-neue-bold.ttf') format('truetype'),
+         url('../fonts/helvetica-neue-bold.svg#HelveticaNeueBold') format('svg');
+}
+@font-face {
+    font-family: 'HelveticaNeueLight';
+    src: url('../fonts/helveticaneue-light.eot');
+    src: url('../fonts/helveticaneue-light.eot') format('embedded-opentype'),
+         url('../fonts/helveticaneue-light.woff2') format('woff2'),
+         url('../fonts/helveticaneue-light.woff') format('woff'),
+         url('../fonts/helveticaneue-light.ttf') format('truetype'),
+         url('../fonts/helveticaneue-light.svg#HelveticaNeueLight') format('svg');
+}
+
+
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSansRegular.eot');
+    src: url('../fonts/OpenSansRegular.eot') format('embedded-opentype'),
+         url('../fonts/OpenSansRegular.woff2') format('woff2'),
+         url('../fonts/OpenSansRegular.woff') format('woff'),
+         url('../fonts/OpenSansRegular.ttf') format('truetype'),
+         url('../fonts/OpenSansRegular.svg#OpenSansRegular') format('svg');
+}
+
+
+body{
+	padding-top:70px;
+	color:#4d4d4d;
+}
+
+p{
+	font-family: 'HelveticaNeueLight';
+	}
+.header{
+	background-color:#14142f;
+	position:fixed;
+	width:100%;
+	top:0px;
+	height:70px;
+	z-index:2000;
+}
+
+.header .top_line{
+	padding-top:2px;
+}
+.header .logo{
+	text-align:center;
+	padding-top:10px;
+}
+
+
+.header a.contact_button{
+	background-color:#009fe4;
+	display:inline-block;
+	min-width:160px;
+	height:70px;
+	text-decoration:none;
+	color:#fff;
+	font-size:18px;
+	line-height:70px;
+	text-align:center;
+}
+.contact_form{
+	background-color: rgba(238,238,238,0.9);
+	position:fixed;
+	width:100%;
+	top:70px;
+	z-index:200;
+	}
+
+.contact_form .container{
+	padding-top:26px;
+	padding-bottom:70px;
+	}
+	
+.contact_form h1{
+	margin:0px 0 50px;
+	padding:0px;
+	color:#009fe4;
+	}
+
+.contact_form .left_info p{
+	font-size:16px;
+	color:#14142f;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+
+.contact_form .text-muted a{
+	color:#898989;
+	text-decoration:underline;
+	}
+	
+.contact_form .close_form{
+	padding:15px 30px 0px;
+	font-size:16px;
+	text-align:right;
+	}	
+.contact_form .close_form a{
+	color:#000000;
+	text-decoration:none;
+
+	}	
+.page_content{
+	padding:0px;
+	margin:0px;
+}
+
+.banner{
+	background:url(../images/banner.jpg) no-repeat 50% 50%;
+	background-size:cover;
+	min-height:334px;
+}
+
+.banner h1{
+	margin:0px;
+	padding:65px 0 25px;
+	font-size:38px;
+	color:#14142f;
+}
+.banner p{
+	font-size:21px;
+	color:#14142f;
+}
+.information_content{
+	padding-top:55px;
+	padding-bottom:55px;
+}
+
+.information_content ul{
+	margin:0px 15px;
+	padding:0px;
+}
+.information_content ul li{
+	color:#898989;
+	font-size:17px;
+	font-family: 'HelveticaNeueLight';
+}
+.information_content p{
+	color:#898989;
+	font-size:17px;
+	margin-bottom:20px;
+}
+.information_content h4{
+	margin:20px 0px 10px;
+	color:#14142f;
+	font-size:17px;
+
+}
+.information_content .signature{
+	padding-top:40px;
+	display:block;
+}
+
+.join_box{
+	background-color:#e7e7e8;
+	padding:50px 0 50px 0;
+}
+
+.join_box .container{
+	max-width:610px;
+	text-align:center;
+}
+.join_box .container h1{
+	font-size:34px;
+	color:#1b0e28;
+}
+.join_box .container p{
+	font-size:17px;
+	color:#4d4d4d;
+}
+
+.join_box .form-control, .join_box .btn {
+	max-width:435px;
+	margin:0 auto;
+	text-align:center;
+	height:40px!important;
+
+}
+.adviser_box{
+	background:#0e71b8;
+	padding:0px 0 0px 0;
+		color:#fff;
+}
+
+.adviser_box .container{
+	background:url(../images/bottom_line.png) no-repeat left top;
+	text-align:center;
+	min-height:285px;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+.adviser_box .container h2{
+	line-height:1.6;
+}
+
+.adviser_box .container p{
+	font-size:17px;
+}
+.as_seen_on{
+	padding-top:80px;
+	padding-bottom:50px;
+	text-align:center;
+}
+
+.as_seen_on p{
+	font-size:12px;
+	color:#060606;
+	margin-bottom:20px;
+	text-transform:uppercase;
+}
+
+.footer{
+	padding-top:50px;
+	padding-bottom:50px;
+	background-color:#14142f;
+	color:#fff;
+}
+.footer a{
+	color:#fff;
+}
+
+
+.footer .address_left{
+	font-size:15px;
+}
+
+.footer .address_right{
+	font-size:16px;
+}
+/*custom classes to make adjustment*/
+.pd_left_zero {
+	padding-left: 0px;
+}
+.pd_right_zero {
+	padding-right: 0px;
+}
+.pd_zero {
+	padding: 0px;
+}
+.margin_zero {
+	margin: 0px;
+}
+.pull_top {
+	padding-top: 15px;
+}
+.pull_bottom {
+	padding-bottom: 20px;
+}
+.pull_top_large {
+	padding-top: 20px;
+}
+.pull_bottom_large {
+	padding-bottom: 30px;
+}
+.img-responsive {
+	display: inline-block;
+}
+.bold {
+	font-weight: bold;
+}
+/*custom classes to make adjustment*/
+
+
+@media (max-width:767px) {
+.header a.contact_button{
+	min-width:120px;
+}
+
+.contact_form .container{
+	padding-top:10px;
+	padding-bottom:20px;
+	}	
+.contact_form h1{
+	margin:0px 0 20px;
+	font-size:24px;
+	}
+
+.contact_form .left_info {
+	padding-bottom:5px;
+	}
+	
+.banner{
+	background:url(../images/banner.jpg) no-repeat 50% 50%;
+	background-size:cover;
+	min-height:250px;
+	padding-top:25px;
+	padding-bottom:25px;
+}
+
+.banner h1{
+	margin:0px;
+	padding:0px 0 25px;
+	font-size:30px;
+}
+.banner p{
+	font-size:17px;
+}
+.information_content{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.join_box{
+	padding:30px 0 30px 0;
+}
+
+.adviser_box .container{
+	background:none;
+	padding-top:30px;
+	padding-bottom:30px;
+	min-height:inherit;
+}
+.as_seen_on{
+	padding-top:30px;
+	padding-bottom:30px;
+}	
+
+.as_seen_on img{
+	margin-bottom:20px;
+	margin-top:20px;
+}
+.footer{
+	padding-top:30px;
+	padding-bottom:30px;
+	text-align:center;
+
+}
+.footer .address_right{
+	padding-top:20px;
+
+}			
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	 
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+	 
+}
+
+@media (min-width:1200px) {
+	 
+}

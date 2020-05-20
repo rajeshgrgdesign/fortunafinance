@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//Mac OS X 10.13.2//EN
+N:Whatnall;Ben;;;
+FN:Ben Whatnall
+ORG:Fortuna Financial Planning;
+EMAIL;type=INTERNET;type=WORK;type=pref:bw@fortunafinance.co.uk
+TEL;type=WORK;type=VOICE;type=pref:+44 1992 503 410
+ADR;type=HOME;type=pref:;;4 Old Park Lane;London;Mayfair;W1K 1QW;United Kingdom
+URL;type=WORK;type=pref:www.fortunafinance.co.uk
+CATEGORIES:Business
+UID:15b3b33f-7b8e-4fa8-9917-28f7429169af
+X-ABUID:BF74AAAC-33E0-4BC2-84F1-E43AD490397C:ABPerson
+END:VCARD
