@@ -33,7 +33,7 @@ if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() )
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 <!-- Favicon -->
-<link rel="shortcut icon" href="<?php bloginfo('url'); ?>/favicon.ico">
+<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/favicon.png">
 <!-- Canonical -->    
 <link rel="canonical" href="<?php bloginfo('url'); ?>" />
 <?php wp_head(); ?>
@@ -58,13 +58,55 @@ if ( ( $paged >= 2 || $page >= 2 ) && ! is_404() )
         <div class="right-header">
             <?php if( get_field('phone_number_text', 'option') ): ?><div class="phone"><?php the_field('phone_number_text', 'option'); ?></div><?php endif; ?>
             <!-- <a href="<?php the_field('client_login_link', 'option'); ?>" class="btn btn-primary btn-light btn-login" target="_blank"><?php if( get_field('client_login_button', 'option') ): ?><?php the_field('client_login_button', 'option'); ?><?php else: ?>Client Login<?php endif; ?></a> -->
-            <a href="<?php the_field('apply_online_link', 'option'); ?>" class="btn btn-primary btn-apply btn-apply-online"><?php if( get_field('apply_online_button', 'option') ): ?><?php the_field('apply_online_button', 'option'); ?><?php else: ?>Apply Online<?php endif; ?></a>
+            <a  class="btn btn-primary btn-apply btn-apply-online" data-toggle="collapse" type="button" data-target="#apply-form" aria-expanded="false"
+                ><?php if( get_field('apply_online_button', 'option') ): ?><?php the_field('apply_online_button', 'option'); ?><?php else: ?>Apply Online<?php endif; ?></a>
             <a data-toggle="collapse" type="button" class="collapsed btn btn-primary btn-contact" data-target="#contact-form" aria-expanded="false"><?php if( get_field('contact_button', 'option') ): ?><?php the_field('contact_button', 'option'); ?><?php else: ?>CONTACT<?php endif; ?></a>        
         </div>
     </div>
     <!-- /.container -->
 </nav>
 <!-- Navigation -->
+
+
+<div id="apply-form" class="panel-collapse contact-form collapse" aria-expanded="false" role="contentinfo">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="row-padding">
+                <div class="col-sm-5">
+                    <div class="apply-block">
+                        <?php if( get_field('section_heading_ao', 'option') ): ?>
+                        <h3><?php the_field('section_heading_ao', 'option'); ?></h3>
+                        <?php endif; ?>
+                        <?php if( get_field('section_text_ao', 'option') ): ?>
+                        <p><?php the_field('section_text_ao', 'option'); ?></p>
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <div class=" col-sm-7">
+
+<?php if(have_rows('info_block', 'option')):?>
+                    <div class="info-group">
+<?php  while(have_rows('info_block', 'option')): the_row();?>
+                        <div class="info-block">
+                            <?php if( get_sub_field('heading') ): ?>
+                            <h4><?php the_sub_field('heading'); ?></h4>
+                            <?php endif; ?>
+                            <?php if( get_sub_field('text') ): ?>
+                            <p><?php the_sub_field('text'); ?></p>
+                            <?php endif; ?>
+                            <?php if( get_sub_field('button_text') ): ?>
+                            <a href="<?php the_sub_field('button_link'); ?>" class="btn btn-primary btn-blue-cta"><?php the_sub_field('button_text'); ?></a>
+                            <?php endif; ?>
+                        </div>
+<?php endwhile;?>
+                    </div>
+<?php endif;?>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div id="contact-form" class="panel-collapse contact-form collapse" aria-expanded="false" role="contentinfo">
     <div class="container-fluid">

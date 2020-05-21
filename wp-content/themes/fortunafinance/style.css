@@ -3,7 +3,7 @@ Theme Name: FortunaFinance
 Theme URI: http://fortuna-finance.co.uk
 Description: Theme for Fortuna Finance
 Author:Webpop Design
-Version: 1.0
+Version: 1.1
 Author URI: http://www.webpopdesign.com
 Tags: two columns, widgets, CMS, corporate, company
 */
@@ -187,6 +187,44 @@ label {font-weight: 400;font-size:13px;}
 #contact-form .form-block span.wpcf7-checkbox .wpcf7-list-item-label {float:left;width: calc(100% - 23px); font-size: 14px; line-height: 18px; max-width: 300px;}
 
 #contact-form .form-block div.wpcf7-response-output {margin: 15px 0 0 0px!important;padding: 10px;font-size: 13px;width: 100%;}
+
+
+
+#apply-form {position:fixed;margin-left: auto;margin-right: auto;left: 0;right: 0;background: rgba(20, 53, 86, 0.95); color:#fff;z-index: 9999999999!important;}
+#apply-form .row-padding {padding: 25px 0px;}
+#apply-form h3 {font-size: 26px;margin-top: 0px;margin-bottom: 10px; color: #fff}
+#apply-form h4 {font-size: 20px;margin-top: 0px;margin-bottom: 3px; color: #fff}
+
+.info-group {display: flex;flex-wrap: wrap; justify-content: space-between; flex-direction: column; }
+.info-group .info-block p{font-size: 16px; line-height: 25px; margin-bottom: 12px;}
+
+.btn-blue-cta,
+.btn-blue-cta:focus,
+.btn-blue-cta:active {
+	color: #fff;
+    background-color: #16162f;
+    font-family: 'Effra-medium';
+    font-size: 17px;
+    display: block;
+    padding: 8px 12px;
+}
+
+.btn-blue-cta:hover {
+	color: #fff;
+    background-color: #1D71B8;
+}
+@media (min-width: 769px) {
+	.apply-block {max-width: 410px;}
+	#apply-form .row-padding {padding: 64px 0px 96px 0px;}
+	.info-group { max-width: 580px; margin-left: auto; margin-top: 42px; flex-direction: row;}
+	.info-group .info-block {width: 50%; flex: 0 0 50%;}
+	.info-group .info-block:first-child {padding-right: 10px;}
+	.info-group .info-block:last-child {padding-left: 10px;}
+}
+@media (max-width: 768px) {
+	.info-group .info-block:first-child {margin-bottom: 15px;}
+
+}
 
 #content {padding:70px 0px;}
 #content h1 {color:#211d30; margin-bottom:35px;}
