@@ -81,7 +81,7 @@ h6, .h6 {font-size: 20px; color: #1d71b8;}
 .right-header a {text-decoration: none;}
 .right-header .btn {-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;line-height:70px;padding:0px 20px; min-width: 160px;}
 .right-header .btn-login:hover {background: rgba(20, 53, 86, 0.9); opacity: 1;}
-.right-header .btn-apply-online:hover {background: #1D71B8; opacity: 1;}
+.right-header .btn-apply-online:hover {background: rgba(20, 53, 86, 0.9); opacity: 1;}
 .right-header .btn-contact:hover {background: rgba(29, 113, 184, 0.9); opacity: 1;}
 
 .customize-support .mortgage-nav {margin-bottom: 0;}
@@ -152,7 +152,8 @@ label {font-weight: 400;font-size:13px;}
 #jumbotron .jumbo-secondary-heading {font-size:17px!important;line-height:25px!important;color:#fff;margin-top:0px!important;display:block;}
 #jumbotron .jumbo-text {position: absolute;top: 50%;transform: translateY(-50%);}
 #jumbotron h5{color: #fff;}
-#jumbotron h5 a{display: inline-block; color: #fff;}
+#jumbotron h5 .btn{background: rgba(29,113,184,1); color: #ffffff; font-size: 17px; width: 100%; max-width: 250px; padding:5px 12px;}
+#jumbotron h5 .btn:hover{background: rgba(29,113,184,0.9); color: #ffffff;}
 
 #jumbotron.home {background: url(images/jumbotron-bg.png) no-repeat;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-position:center;width:100%;height: 425px;}
 
@@ -161,6 +162,50 @@ label {font-weight: 400;font-size:13px;}
 #jumbotron.home .hero-slider .owl-dots {position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%);}
 #jumbotron.home .hero-slider .owl-dots .owl-dot {width: 10px; height: 10px; border-radius: 50%; background: #778b9e; transition: all 0.3s; margin: 0 3px; }
 #jumbotron.home .hero-slider .owl-dots .owl-dot.active {background: #d0d0d0;}
+
+
+.highlight-section {padding: 45px 0; background: #f3f3f3;}
+.highlight-section .inner-wrap{max-width: 1005px;}
+.highlight-section .highlight-block{}
+.highlight-section .highlight-block h3{font-size: 24px; margin-bottom: 10px;}
+
+@media (max-width: 768px) {
+	.highlight-section {padding: 35px 0;}
+	.highlight-section .col-sm-6{margin-bottom: 30px;}
+	.highlight-section .col-sm-6:last-child{margin-bottom: 0;}
+}
+
+.service-section {padding: 63px 0;}
+.service-section .inner-wrap{max-width: 1170px; padding-left: 25px;padding-right:25px;}
+.service-section .row{margin-left: -25px;margin-right: -25px; display: flex; flex-wrap: wrap; justify-content: center;}
+.service-section .row:before,.service-section .row:after{display: none;}
+.service-section .col-service{padding-left: 25px;padding-right:25px;}
+.service-section .service-block{border-top: 2px solid #191930; padding-top: 12px; display: flex; flex-direction: column;}
+.service-section .service-block .h3{ margin-bottom: 10px;}
+.service-section .service-block a{ margin-top: auto;}
+
+@media (min-width: 769px) {
+	.service-section .col-service{flex: 0 0 33.33%; max-width: 33.33%;}
+	.service-section .service-block{height: 100%;}
+}
+@media (max-width: 768px) {
+	.service-section {padding: 35px 0;}
+	.service-section .col-service{margin-bottom: 30px;}
+	.service-section .col-service:last-child{margin-bottom: 0;}
+}
+
+.whatweoffer-section {padding: 66px 0 67px 0; background: #f3f3f3;}
+.whatweoffer-section .inner-wrap{max-width: 1148px;}
+.whatweoffer-section .content-block{}
+.whatweoffer-section .content-block .h3{ margin-bottom: 10px;}
+.whatweoffer-section h2{margin-bottom: 12px;}
+.whatweoffer-section p{line-height: 30px;}
+.whatweoffer-section p:last-child{ margin-bottom:0;}
+
+@media (max-width: 768px) {
+	.whatweoffer-section {padding: 25px 0;}
+}
+
 
 .row-padding {padding:60px 0px 65px 0px;}
 #contact-form {position:fixed;margin-left: auto;margin-right: auto;left: 0;right: 0;background: rgba(29, 113, 184, 0.95); color:#fff;z-index: 9999999999!important;}
@@ -259,15 +304,16 @@ label {font-weight: 400;font-size:13px;}
 #contact-section .button-block {text-align: center; margin-top: 40px;}
 #contact-section .btn {font-size:17px;width:100%;max-width:400px;margin: 0 12px 12px 12px; padding: 8px 0px; text-decoration: none;}
 #contact-section .btn-apply-online {background: #143556;}
-#contact-section .btn-apply-online:hover {background: #1D71B8;}
+#contact-section .btn-apply-online:hover {background: rgba(20, 53, 86, 0.9);}
 
 #product {background: url(images/product-bg.png) no-repeat;background-repeat:no-repeat;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-position:center;width:100%;}
 #product .wrap { position: relative;}
 #product .wrap:after {position: absolute; content: ''; width: 200%; left: 58%; height: 100%; background: rgba(20,20,47,0.8); top: 0;}
-.product-text {position: relative; padding: 76px 0 76px 45px; z-index: 1;}
+.product-text {position: relative; padding: 76px 0 76px 45px; z-index: 1; min-height: 400px;}
 .product-text h3, .product-text h4, .product-text h5 {text-shadow: 2px 2px #38332e;margin-bottom:0;margin-top: 0px!important;}
-.product-text h3 {font-size:40px;color:#fff;margin-bottom: 15px;}
-.product-text h4 {font-size:20px;color:#fff; font-weight: 400!important; font-style: italic;margin-bottom: 40px;}
+.product-text h3 {font-size:28px;color:#fff;margin-bottom: 6px;}
+.product-text h4 {font-size:20px;color:#fff; margin-bottom: 30px;}
+.product-text h5 {font-size:20px;color:#fff; }
 .product-text p {color:#fff;margin-bottom: 30px;}
 .product-text h5 a {font-size:20px;color:#ffffff; font-weight: 500;font-family:'Effra'; text-decoration: none;}
 .product-text h5 a:hover {text-decoration: underline;}
@@ -285,6 +331,7 @@ label {font-weight: 400;font-size:13px;}
 @media (max-width: 768px) {
 	#contact-form .row-padding {padding: 25px 0;}
 	#contact-form form p {margin-bottom: 6px;}
+	.product-text {min-height: unset;}
 }
 
 @media (max-width: 520px) {
